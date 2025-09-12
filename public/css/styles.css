@@ -1,198 +1,48 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Trebuchet MS', sans-serif;
-  line-height: 1.6;
-  background: #121212 url('/public/img/fundo.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: #f4f4f4;
+ background: #121212 url('/public/img/fundo.jpg') no-repeat center center fixed;
+ background-size: cover;
+ color: #f4f4f4;
+ font-family: 'Trebuchet MS', sans-serif;
 }
 
-.header {
-  background: rgba(20, 20, 20, 0.9);
-  padding: 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  border-bottom: 2px solid #9d4edd;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+header, footer {
+  background: rgba(20,20,20,0.9);
+  border-color: #9d4edd !important;
 }
 
-.header h1 {
-  font-size: 2rem;
-  color: #e0aaff;
-  margin-bottom: 10px;
-  text-shadow: 0 0 10px #9d4edd;
-}
-
-.menu ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.menu a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
-.menu a:hover {
-  background: #9d4edd;
-  color: #fff;
-}
-
-.conteudo {
-  padding: 40px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-section h2 {
-  color: #ba61fe;
-  margin-bottom: 20px;
-  font-size: 1.8rem;
-  border-bottom: 2px solid #9d4edd;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-.artigo {
-  margin-bottom: 30px;
-  padding: 20px;
-  border-radius: 12px;
-  background: rgba(30, 30, 30, 0.85);
-  border: 1px solid #9d4edd;
-  box-shadow: 0 0 15px rgba(157, 78, 221, 0.4);
-}
-
-.artigo h3 {
+h1, h2, h3 {
   color: #d181ff;
-  margin-bottom: 10px;
+  text-shadow: 0 0 8px #9d4edd;
 }
 
-img {
-  max-width: 100%;
-  border-radius: 12px;
-  margin-top: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+.card p {
+  color: #ffffff; 
 }
 
-.cards {
-  display: flex;
-  gap: 20px;
-  margin-top: 40px;
+.nav-link:hover {
+  background: #9d4edd;
+  border-radius: .5rem;
+  color: #fff !important;
 }
 
-.card {
-  flex: 1;
-  background: rgba(30, 30, 30, 0.85);
+.artigo, .card {
+  background: rgba(30,30,30,0.85);
   border: 1px solid #9d4edd;
   border-radius: 12px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 0 15px rgba(157, 78, 221, 0.4);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(157,78,221,0.4);
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 25px rgba(157, 78, 221, 0.8);
-}
-
-.card img {
-  max-width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.card h3 {
-  color: #d181ff;
-  margin-bottom: 10px;
-}
-
-.footer {
-  background: rgba(20, 20, 20, 0.9);
-  text-align: center;
-  padding: 20px;
-  margin-top: 30px;
-  border-top: 2px solid #9d4edd;
-  color: #ddd;
-  font-size: 0.9rem;
+  box-shadow: 0 0 25px rgba(157,78,221,0.8);
 }
 
 .saiba_mais {
-  color: #ee3573;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
+ color: #ee3573;
+ text-decoration: none;
+ font-weight: bold;
 }
 
 .saiba_mais:hover {
   color: #ff6699;
-}
-@media (max-width: 992px) {
-  .menu ul {
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .conteudo {
-    padding: 20px;
-  }
-
-  .cards {
-    flex-wrap: wrap;
-  }
-
-  .card {
-    flex: 1 1 45%;
-  }
-}
-
-@media (max-width: 600px) {
-  .header {
-    text-align: center;
-    padding: 10px;
-  }
-
-  .menu ul {
-    flex-direction: row; 
-    justify-content: center; 
-    gap: 8px; 
-    padding: 0;
-    flex-wrap: wrap;
-  }
-
-  .menu ul li {
-    width: auto; 
-    text-align: center;
-  }
-
-  .cards {
-    flex-direction: column;
-    gap: 15px;
-    padding: 10px;
-  }
-
-  .card {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-
-  section h2 {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-
-  .header h1 {
-    font-size: 1.4rem;
-  }
-}
+ }
